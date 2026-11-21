@@ -1,10 +1,4 @@
-# Processamento de Vendas e Estoque — Java
-
-Tradução manual e correspondente da versão Python do trabalho N2, utilizando Java 17+ e apenas a biblioteca padrão.
-
 ## Preparar ambiente local isolado
-
-O Java não possui `venv` nativo. Usamos `jlink` para criar um runtime Java próprio em `.java-env/runtime`, com classes compiladas em `.java-env/classes`. É necessário ter um JDK 17+ disponível na primeira preparação.
 
 Windows PowerShell:
 
@@ -21,12 +15,6 @@ bash preparar_ambiente.sh
 bash executar.sh --todos
 bash testar.sh
 ```
-
-A pasta `.java-env` é local e não é distribuída no ZIP porque depende do sistema operacional e da arquitetura.
-
-Como alternativa, no Prompt de Comando do Windows (CMD), utilize os arquivos
-`preparar_ambiente.cmd`, `executar.cmd` e `testar.cmd`. Assim, não é
-necessário alterar a política de execução do PowerShell.
 
 ## Execuções
 
