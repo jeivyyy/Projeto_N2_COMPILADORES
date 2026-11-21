@@ -1,0 +1,13 @@
+import java.util.Locale;
+
+/** formatação da saída em reais  */
+final class Formatacao {
+    private static final Locale LOCALE_BRASILEIRO = Locale.forLanguageTag("pt-BR");
+
+    private Formatacao() {
+    }
+
+    static String formatar_moeda(double valor) {
+        return String.format(LOCALE_BRASILEIRO, "R$ %,.2f", valor);
+    }
+}
