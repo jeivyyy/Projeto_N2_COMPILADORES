@@ -2,8 +2,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Entradas dos seis testes */
-final class Cenarios {
+/** Entradas dos seis testes já planejados no relatório parcial N2. */
+final class Cenarios { 
     static final Map<Integer, String> DESCRICOES = criarDescricoes();
 
     private Cenarios() {

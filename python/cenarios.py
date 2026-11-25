@@ -18,6 +18,7 @@ def montar_cenario(numero: int) -> list[Produto]:
     if numero not in DESCRICOES:
         raise ValueError("O cenário deve estar entre 1 e 6.")
 
+    # O sexto cenário deve ser uma lista realmente vazia, não um item com zero.
     if numero == 6:
         return []
 

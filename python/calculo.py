@@ -8,13 +8,13 @@ LIMITE_DESCONTO = 50
 
 
 def calcular_valor_final_item(quantidade: int, preco: float) -> float:
-    """Retorna o valor do item, com desconto por volume quando aplicável."""
+    # 1uantidades negativas tornam o item inválido.
     if quantidade < 0:
         raise QuantidadeInvalidaError()
 
     subtotal = quantidade * preco
 
-    # o desconto de 10% começa em 50 unidades
+    # O desconto de 10% começa exatamente em 50 unidades, inclusive.
     if quantidade >= LIMITE_DESCONTO:
         return subtotal * (1 - PERCENTUAL_DESCONTO)
 

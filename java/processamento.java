@@ -1,5 +1,5 @@
-/** responsável por agregar os subtotais de um pedido. */
-final class Processamento {
+/** Responsável por agregar os subtotais de um pedido. */
+final class Processamento { 
     private Processamento() {
     }
 

@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-/** formatação da saída em reais  */
+/** Formatação da saída em reais, com duas casas decimais. */
 final class Formatacao {
     private static final Locale LOCALE_BRASILEIRO = Locale.forLanguageTag("pt-BR");
 
